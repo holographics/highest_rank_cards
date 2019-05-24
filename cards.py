@@ -1,7 +1,7 @@
 from collections import OrderedDict
 import numpy as np
 
-RANKS = [str(i) for i in range(2, 11)] + ['J', 'Q', 'K', 'A']        
+RANKS = [str(i) for i in range(2, 11) + list('JQKA')]         
 SUITS = ['hearts', 'spades', 'clubs', 'diamonds']
 
 class Card(object):
