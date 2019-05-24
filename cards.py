@@ -20,11 +20,8 @@ def get_output(cards):
 
 cards = [Card(suit, rank) for suit in SUITS for rank in RANKS] 
     
-random_cards = list()
-random_range = list(( np.random.uniform(low=1, high=len(cards), size=(17,)) ).astype(int))
-for rand_int in random_range:
-    random_cards.append(cards[rand_int])
-    
+rand_range = list(( np.random.uniform(low=1, high=len(cards), size=(17,)) ).astype(int))
+rand_cards = [cards[rand_int] for rand_int in rand_range]
     
 result = get_output(random_cards)
 print 'result: %s' % result
