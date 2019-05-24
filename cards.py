@@ -20,7 +20,7 @@ def get_output(cards):
 
 cards = [Card(suit, rank) for suit in SUITS for rank in RANKS] 
     
-rand_range = list(set(np.random.uniform(low=1, high=52, size=25).astype(int)))[:7]
+rand_range = list(set(np.random.uniform(low=1, high=len(cards), size=25).astype(int)))[:7]
 rand_cards = [cards[rand_int] for rand_int in rand_range]
     
 result = get_output(random_cards)
