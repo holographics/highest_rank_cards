@@ -15,7 +15,7 @@ class Tuxedo(object):
         self.day = day 
 
     def is_available(self, day):
-        return any([not self.day, self.day - 3 > day, self.day + 3 < day]) 
+        return any([not self.day, self.day + 3 < day]) 
 
 class Inventory(object):
     def __init__(self):
