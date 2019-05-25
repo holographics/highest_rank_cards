@@ -36,7 +36,7 @@ class Inventory(object):
                 print 'Tuxedos style %s are available for day %s' % (style, day)
                 break
         else:
-            print 'More tuxedo needed!'
+            print 'We need more tuxedos!'
 
 if __name__ == '__main__': 
     inv = Inventory()
